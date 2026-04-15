@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="Wilson Chung Portfolio">
+  <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript, Node.js">
+  <meta name="author" content="Wilson Chung">
+
+  <title>Wilson Chung | Portfolio</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <a href="#landing">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#tech">Tech</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="landing">
+    <h1>Hello, I'm Wilson Chung</h1>
+    <p>Web Developer building interactive applications</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p> I'm a web developer with experience building responsive front-end interfaces and full-stack applications. I
+      enjoy learning new technologies and improving my problem-solving skills through real-world projects. </p>
+  </section>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project" onclick="openModal('pokedex')">
+      <h3>Pokédex Web App</h3>
+      <p>Click to view details</p>
+    </div>
+
+    <div class="project" onclick="openModal('matching')">
+      <h3>Number Matching Game</h3>
+      <p>Click to view details</p>
+    </div>
+
+    <div class="project" onclick="openModal('portal')">
+      <h3>Student Service Portal</h3>
+      <p>Click to view details</p>
+    </div>
+
+    <div class="project" onclick="openModal('review')">
+      <h3>Game Review Tracker</h3>
+      <p>Click to view details</p>
+    </div>
+  </section>
+
+  <!-- TECH -->
+  <section id="tech">
+    <h2>Tech Stack</h2>
+    <div class="stack">HTML</div>
+    <div class="stack">CSS</div>
+    <div class="stack">JavaScript</div>
+    <div class="stack">Node.js</div>
+    <div class="stack">Express</div>
+    <div class="stack">MongoDB</div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2026 Wilson Chung
+  </footer>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+
+      <h2 id="modal-title"></h2>
+      <p id="modal-desc"></p>
+
+      <div class="modal-links">
+        <a id="modal-github" target="_blank" class="modal-btn">GitHub</a>
+        <a id="modal-live" target="_blank" class="modal-btn primary">Live Demo</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/java/script.js"></script>
+
+</body>
+
+</html>
