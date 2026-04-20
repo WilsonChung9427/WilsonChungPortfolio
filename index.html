@@ -5,11 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta name="description" content="Wilson Chung Portfolio">
-  <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript, Node.js">
-  <meta name="author" content="Wilson Chung">
-
   <title>Wilson Chung | Portfolio</title>
+
+  <!-- ROBOTO -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -17,7 +16,12 @@
 <body>
 
   <header>
-    <div class="logo">MyPortfolio</div>
+    <div class="logo">
+      <a href="#landing">
+        <img src="/res/Black.png" alt="Wilson Chung Logo">
+      </a>
+    </div>
+
     <nav>
       <a href="#landing">Home</a>
       <a href="#about">About</a>
@@ -32,38 +36,46 @@
     <p>Web Developer building interactive applications</p>
   </section>
 
-  <!-- About -->
+  <!-- ABOUT -->
   <section id="about">
     <h2>About Me</h2>
-    <p> Hi, my name is Wilson, an aspiring web designer/developer! Navigating websites can be tough, especially if they’re created without considering the user. This is where my design steps in! I love clean and modern layouts that balance aesthetics with thoughtful design decisions while focusing on intuitive navigation and functional usability. My goal as a web designer/developer is to create accessible, user-friendly designs that deliver a seamless experience.
+    <p>
+      Hi, my name is Wilson, an aspiring web designer/developer! Navigating websites can be tough, especially if they’re
+      created without considering the user. This is where my design steps in! I love clean and modern layouts that
+      balance aesthetics with thoughtful design decisions while focusing on intuitive navigation and functional
+      usability. My goal as a web designer/developer is to create accessible, user-friendly designs that deliver a
+      seamless experience.
     </p>
-  </section>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects">
     <h2>Projects</h2>
+    <div class="projects-container">
+      <div class="project" onclick="openModal('portal')">
+        <img src="/res/ssa.png" alt="Student Portal Preview">
+        <h3>Student Service Portal</h3>
+        <p>Click to view details</p>
+      </div>
 
-    <div class="project" onclick="openModal('portal')">
-      <h3>Student Service Portal</h3>
-      <p>Click to view details</p>
-    </div>
+      <div class="project" onclick="openModal('review')">
+        <img src="/res/game-review.png" alt="Game Review Tracker">
+        <h3>Game Review Tracker</h3>
+        <p>Click to view details</p>
+      </div>
 
-    <div class="project" onclick="openModal('review')">
-      <h3>Game Review Tracker</h3>
-      <p>Click to view details</p>
-    </div>
-    
-    <div class="project" onclick="openModal('pokedex')">
-      <h3>Pokédex Web App</h3>
-      <p>Click to view details</p>
-    </div>
+      <div class="project" onclick="openModal('pokedex')">
+        <img src="/res/pokedexAPI.png" alt="Pokédex Web App">
+        <h3>Pokédex Web App</h3>
+        <p>Click to view details</p>
+      </div>
 
-    <div class="project" onclick="openModal('matching')">
-      <h3>Number Matching Game</h3>
-      <p>Click to view details</p>
+      <div class="project" onclick="openModal('matching')">
+        <img src="/res/matching-game.png" alt="Number Matching Game">
+        <h3>Number Matching Game</h3>
+        <p>Click to view details</p>
+      </div>
     </div>
-
   </section>
 
   <!-- TECH -->
